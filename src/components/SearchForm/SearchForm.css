@@ -64,7 +64,7 @@
 .search-form__input::placeholder {
     font-family: 'Roboto';
     font-size: 13px;
-    line-height: 22px;
+    line-height: 48px;
     color: #B6BCBF;
 }
 

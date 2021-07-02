@@ -1,6 +1,6 @@
 # СУПЕРБАЗА
 
-## <https://geomap987.github.io/calls-datatable>
+## <http://lumpyspace.ml>
 
 **Описание**
 
