@@ -1,0 +1,99 @@
+.table {
+    margin: auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+th, td {
+    padding: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+ 
+}
+
+thead th {
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-color: rgba(36, 41, 102, 0.4);
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr {
+    transition: box-shadow .2s ease-in-out;
+}
+
+tbody tr:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.4);
+}
+
+.table__info {
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.table__info:hover {
+    cursor: help;
+}
+
+.table__header-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.table__header-button {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin: 5px 5px 0 5px;
+    transition: scale .5s ease-in-out;
+}
+
+.table__header-button_active {
+    transform: scale(1.2)
+}
+
+.table__header-button:hover {
+    cursor: pointer;
+    transform: scale(1.2)
+}
+
+.table__link {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.table__scroll {
+    width: 100%;
+    max-height: 60vh;
+    min-height: 60vh;
+}
+
+@media screen and (max-width: 800px) {
+    .table {
+        margin: auto;
+        width: 100%;
+    }
+    table {
+        font-size: 12px;
+    }
+}

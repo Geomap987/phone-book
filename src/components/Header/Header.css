@@ -1,0 +1,27 @@
+.header {
+    width: 95%;
+    height: 144px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.header__logo {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header__logo {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    
+}

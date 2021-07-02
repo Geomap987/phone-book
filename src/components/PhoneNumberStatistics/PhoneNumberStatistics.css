@@ -1,0 +1,35 @@
+.phone-statistics {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.phone-statistics__title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 1200px) {
+    .phone-statistics {
+        height: 100px;
+        margin-bottom: 16px;
+    }
+    .phone-statistics__title {
+        width: 50%;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .phone-statistics {
+        height: 100px;
+        margin-bottom: 16px;
+    }
+    .phone-statistics__title {
+        width: 70%;
+        font-size: 22px;
+    }
+}
+

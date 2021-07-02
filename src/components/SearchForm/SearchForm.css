@@ -1,0 +1,211 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.search-form__title {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.search-form__form {
+    height: 48px;
+    position: relative;
+    margin-bottom: 32px;
+    z-index: 3;
+}
+
+.search-form__statistics-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 48px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255, 0.1);
+    border: none;
+    padding: 0;
+    outline: none;
+    padding-left: 24px;
+}
+.search-form__subtitle {
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.search-form__input {
+    width: 500px;
+    height: 48px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255, 0.3);
+    border: none;
+    padding: 0;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: white;
+    line-height: 22px;
+    padding-left: 24px;
+}
+
+.search-form__input::placeholder {
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 22px;
+    color: #B6BCBF;
+}
+
+.search-form__input:focus {
+    background:rgb(255, 255, 255, 0.7)
+}
+
+.search-form__input:focus::placeholder {
+    color: transparent;
+}
+
+
+.search-form__button {
+    position: absolute;
+    left: 404px;
+    width: 120px;
+    height: 48px;
+    border-radius: 100px;
+    background-color: rgba(36, 41, 102, 0.6);
+    border: none;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.search-form__button:hover {
+    cursor: pointer;
+    background: rgba(36, 41, 102, 0.8);
+}
+
+.search-form__button:active {
+    cursor: pointer;
+    background: rgba(36, 41, 102, 0.8);
+}
+
+.search-form__statistic-button {
+    position: absolute;
+    text-align: center;
+    left: 404px;
+    bottom: 0;
+    width: 120px;
+    height: 48px;
+    border-radius: 100px;
+    background-color: rgba(36, 41, 102, 0.6);
+    border: none;
+    padding: 0;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+}
+
+.search-form__statistic-button:hover {
+    cursor: pointer;
+    background: rgba(36, 41, 102, 0.8);
+}
+
+.search-form__statistic-button:active {
+    cursor: pointer;
+    background: rgba(36, 41, 102, 0.8);
+}
+
+@media screen and (max-width: 1330px) {
+    .search-form__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-form__statistics-container {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .search-form__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .search-form__form {
+        margin-bottom: 16px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-form__title {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .search-form__form {
+        margin-bottom: 16px;
+    }
+
+    .search-form__input {
+        width: 316px;
+        height: 48px;
+        font-size: 12px;
+        color: white;
+        line-height: 22px;
+        padding-left: 24px;
+    }
+    
+    .search-form__input::placeholder {
+        font-size: 11px;
+    }
+
+    .search-form__button {
+        left: 240px;
+        width: 100px;
+        font-size: 14px;
+
+    }
+
+    .search-form__statistics-container {
+        position: relative;
+        width: 316px;
+        height: 48px;
+    }
+
+    .search-form__subtitle {
+        font-size: 14px;
+    }
+    .search-form__statistic-button {
+        position: absolute;
+        text-align: center;
+        left: 240px;
+        bottom: 0;
+        width: 100px;
+        height: 48px;
+        border-radius: 100px;
+        background-color: rgba(36, 41, 102, 0.6);
+        border: none;
+        padding: 0;
+        font-family: 'Roboto';
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 48px;
+        color: rgb(255, 255, 255);
+    }
+}

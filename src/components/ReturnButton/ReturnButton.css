@@ -1,0 +1,27 @@
+.return {
+    width: 224px;
+    text-align: center;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: box-shadow .5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .return {
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .return {
+        font-size: 16px;
+        width: 160px;
+    }
+}
