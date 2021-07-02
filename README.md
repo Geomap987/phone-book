@@ -1,6 +1,6 @@
 # СУПЕРБАЗА
 
-## <http://lumpyspace.ml>
+## <http://lumpyspace-phonebook.ml>
 
 **Описание**
 
