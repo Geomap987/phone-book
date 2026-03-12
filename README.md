@@ -39,11 +39,7 @@ For the wait time and duration views, the data is displayed in 10 intervals.
 
 ## Tech Stack
 
-- React
-- Functional components
-- `useState` and `useEffect`
-- Data loading with `fetch`
-- Responsive layout
+- React (Functional components)
 
 ## Run Locally
 
@@ -55,11 +51,9 @@ For the wait time and duration views, the data is displayed in 10 intervals.
 ### Start the app
 
 ```bash
-npm.cmd install --legacy-peer-deps
-npm.cmd start
+npm install 
+npm start
 ```
-
-The project uses `react-scripts` 4, so the npm scripts include the OpenSSL legacy provider needed for newer Node.js releases.
 
 The app will start in development mode at:
 
@@ -69,8 +63,7 @@ http://localhost:3000
 
 ## Local Mock Data
 
-The app now reads call records from a local JSON file:
+The app reads call records from a local JSON file:
 
 [`src/data/calls.json`](/c:/Users/geoma/dev/phone-book/src/data/calls.json)
 
-You can edit that file to change the table contents and statistics without running a backend server.
