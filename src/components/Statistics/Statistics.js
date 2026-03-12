@@ -7,7 +7,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 function Statistics({ data }) {
     const [filterItem, setFilterItem] = React.useState('')
     const [filteredData, setFilteredData] = React.useState([])
-    const [title, setTitle] = React.useState('Параметр')
+    const [title, setTitle] = React.useState('Parameter')
 
     function handleClick(e) {
         setFilterItem(e.target.dataset.filter)
@@ -60,20 +60,20 @@ function Statistics({ data }) {
 
     return (
         <section className="statistics">
-            <h1 className="statistics__title">Статистика количества звонков</h1>
+            <h1 className="statistics__title">Call Statistics</h1>
             <div className="statistics__option-container">
-                <div className="statistics__option" data-filter="number" data-title="Номер телефона" onClick={handleClick}>По номеру телефона</div>
-                <div className="statistics__option" data-filter="calltime" data-title="Дата" onClick={handleClick}>
-                    По дате
+                <div className="statistics__option" data-filter="number" data-title="Phone Number" onClick={handleClick}>By Phone Number</div>
+                <div className="statistics__option" data-filter="calltime" data-title="Date" onClick={handleClick}>
+                    By Date
                 </div>
-                <div className="statistics__option" data-filter="s_in_wait" data-title="Длительность ожидания (сек)" onClick={handleClick}>
-                    По длительности ожидания&nbsp;(сек)
+                <div className="statistics__option" data-filter="s_in_wait" data-title="Wait Time (sec)" onClick={handleClick}>
+                    By Wait Time&nbsp;(sec)
                 </div>
-                <div className="statistics__option" data-filter="s_in_talk" data-title="Длительность ожидания (сек)" onClick={handleClick}>
-                    По длительности разговора&nbsp;(сек)
+                <div className="statistics__option" data-filter="s_in_talk" data-title="Talk Time (sec)" onClick={handleClick}>
+                    By Talk Time&nbsp;(sec)
                 </div>
-                <div className="statistics__option" data-filter="agent" data-title="ID оператора" onClick={handleClick}>
-                    По ID оператора
+                <div className="statistics__option" data-filter="agent" data-title="Operator ID" onClick={handleClick}>
+                    By Operator ID
                 </div>
             </div>
             <div className="statistics__container">
@@ -81,7 +81,7 @@ function Statistics({ data }) {
                 <thead>
                     <tr>
                         <th>{title}</th>
-                        <th>Количество звонков</th>
+                        <th>Number of Calls</th>
                     </tr>
                 </thead>
             </table>

@@ -5,7 +5,7 @@ import logo from '../../logo.png';
 function Header() {
     return (
         <header className="header">
-            <img className="header__logo" src={logo} alt="Логотип Супербазы" />
+            <img className="header__logo" src={logo} alt="Superbase logo" />
         </header>
     );
 }

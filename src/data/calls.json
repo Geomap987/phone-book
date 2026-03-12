@@ -1,0 +1,86 @@
+[
+  {
+    "number": 78121234567,
+    "calltime": 1717135500,
+    "s_in_wait": 12,
+    "s_in_talk": 245,
+    "agent": 101
+  },
+  {
+    "number": 78121234567,
+    "calltime": 1717222200,
+    "s_in_wait": 8,
+    "s_in_talk": 198,
+    "agent": 102
+  },
+  {
+    "number": 79045550123,
+    "calltime": 1717308900,
+    "s_in_wait": 4,
+    "s_in_talk": 321,
+    "agent": 101
+  },
+  {
+    "number": 79045550123,
+    "calltime": 1717396500,
+    "s_in_wait": 18,
+    "s_in_talk": 144,
+    "agent": 104
+  },
+  {
+    "number": 79261239876,
+    "calltime": 1717481100,
+    "s_in_wait": 22,
+    "s_in_talk": 89,
+    "agent": 103
+  },
+  {
+    "number": 79261239876,
+    "calltime": 1717567800,
+    "s_in_wait": 7,
+    "s_in_talk": 276,
+    "agent": 102
+  },
+  {
+    "number": 79651112233,
+    "calltime": 1717654500,
+    "s_in_wait": 15,
+    "s_in_talk": 167,
+    "agent": 104
+  },
+  {
+    "number": 79651112233,
+    "calltime": 1717741200,
+    "s_in_wait": 2,
+    "s_in_talk": 412,
+    "agent": 101
+  },
+  {
+    "number": 79990001122,
+    "calltime": 1717827900,
+    "s_in_wait": 11,
+    "s_in_talk": 233,
+    "agent": 103
+  },
+  {
+    "number": 79990001122,
+    "calltime": 1717914600,
+    "s_in_wait": 5,
+    "s_in_talk": 305,
+    "agent": 102
+  },
+  {
+    "number": 79876543210,
+    "calltime": 1718001300,
+    "s_in_wait": 27,
+    "s_in_talk": 61,
+    "agent": 104
+  },
+  {
+    "number": 79876543210,
+    "calltime": 1718088000,
+    "s_in_wait": 9,
+    "s_in_talk": 188,
+    "agent": 101
+  }
+]

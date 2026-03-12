@@ -15,19 +15,19 @@ function SearchForm({onSearchWord}) {
 
     return (
         <section className="search-form">
-        <h1 className="search-form__title">Информация о звонках клиентам</h1>
+        <h1 className="search-form__title">Customer Call Information</h1>
         <div className="search-form__container">
             <form onSubmit={handleSubmit} className="search-form__form">
                 <input className="search-form__input"
-                    placeholder="Номер телефона в формате 78121234567 или ID оператора"
+                    placeholder="Phone number in format 78121234567 or operator ID"
                     value={searchWord}
                     onChange={handleSearchWord}
                     required></input>
-                <button className="search-form__button">Искать</button>
+                <button className="search-form__button">Search</button>
             </form>
             <div className="search-form__statistics-container">
-                <p className="search-form__subtitle">Статистика звонков по&nbsp;различным&nbsp;параметрам</p>
-                <Link to="/stat" className="search-form__statistic-button">Получить</Link>
+                <p className="search-form__subtitle">Call statistics by&nbsp;different&nbsp;parameters</p>
+                <Link to="/stat" className="search-form__statistic-button">Open</Link>
             </div>
             </div>
         </section>

@@ -5,7 +5,7 @@ function PhoneNumberStatistics({ number, amount }) {
 
     return (
         <section className="phone-statistics">
-            <h2 className="phone-statistics__title">{`По номеру телефона +${number} было совершено ${amount} звонков`}</h2>
+            <h2 className="phone-statistics__title">{`Phone number +${number} has ${amount} calls`}</h2>
         </section>
     );
 }

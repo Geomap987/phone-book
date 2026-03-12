@@ -22,12 +22,12 @@ function Datatable({ data, onNumberClick }) {
     }, [ascendingIsClicked, descendingIsClicked, data])
 
     function convertTime(timestamp) {
-        const d = new Date(timestamp * 1000) 
+        const d = new Date(timestamp * 1000)
         const yyyy = d.getFullYear()
-        const mm = ('0' + (d.getMonth() + 1)).slice(-2)  
-        const dd = ('0' + d.getDate()).slice(-2) 
+        const mm = ('0' + (d.getMonth() + 1)).slice(-2)
+        const dd = ('0' + d.getDate()).slice(-2)
         const hh = d.getHours()
-        const min = ('0' + d.getMinutes()).slice(-2)  
+        const min = ('0' + d.getMinutes()).slice(-2)
         const time = yyyy + '-' + mm + '-' + dd + ', ' + hh + ':' + min
         return time;
     }
@@ -72,18 +72,18 @@ function Datatable({ data, onNumberClick }) {
             <table>
                 <thead>
                     <tr>
-                        <th>Номер телефона
-                            <span className="table__info" title="Для получения данных о звонках нажмите на номер телефона">&#128712;</span>
+                        <th>Phone Number
+                            <span className="table__info" title="Click the phone number to view call details">&#128712;</span>
                         </th>
-                        <th className="table__header-box">Дата и время звонка
+                        <th className="table__header-box">Call Date and Time
                             <div>
-                                <button onClick={handleAscending} className={ascendingIsClicked ? `table__header-button table__header-button_active` : `table__header-button`} title="Сортировка по возрастанию">&#9650;</button>
-                                <button onClick={handleDescending} className={descendingIsClicked ? `table__header-button table__header-button_active` : `table__header-button`} title="Сортировка по убыванию">&#9660;</button>
+                                <button onClick={handleAscending} className={ascendingIsClicked ? `table__header-button table__header-button_active` : `table__header-button`} title="Sort ascending">&#9650;</button>
+                                <button onClick={handleDescending} className={descendingIsClicked ? `table__header-button table__header-button_active` : `table__header-button`} title="Sort descending">&#9660;</button>
                             </div>
                         </th>
-                        <th>Время ожидания (сек)</th>
-                        <th>Время разговора (сек)</th>
-                        <th>ID оператора</th>
+                        <th>Wait Time (sec)</th>
+                        <th>Talk Time (sec)</th>
+                        <th>Operator ID</th>
                     </tr>
                 </thead>
             </table>

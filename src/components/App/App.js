@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Datatable from '../Datatable/Datatable';
@@ -7,33 +7,12 @@ import SearchForm from '../SearchForm/SearchForm';
 import PhoneNumberStatistics from '../PhoneNumberStatistics/PhoneNumberStatistics';
 import Statistics from '../Statistics/Statistics';
 import ReturnButton from '../ReturnButton/ReturnButton';
+import calls from '../../data/calls.json';
 
 function App() {
-  const [data, setData] = React.useState([])
+  const [data] = React.useState(calls)
   const [singlePhoneNumber, setSinglePhoneNumber] = React.useState([])
-  console.log(data)
   const [searchWord, setSearchWord] = React.useState('')
-  console.log(searchWord)
-
-  useEffect(() => {
-    fetch('http://109.248.175.136:5000')
-      .then((res) => res.json())
-      .then((json) => {
-        const callsData = json.data;
-        const columns = json.columns;
-
-        return callsData.map((item) => {
-          const newItem = {};
-          for (let i = 0; i < callsData.length; i++) {
-            newItem[`${columns[i]}`] = item[i]
-          }
-          return newItem
-        })
-
-      })
-      .then((newData) => setData(newData))
-      .catch((err) => console.log(err))
-  }, [])
 
   function handleSearch(a) {
     setSearchWord(a)

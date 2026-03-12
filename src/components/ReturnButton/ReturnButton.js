@@ -4,7 +4,7 @@ import './ReturnButton.css'
 
 function ReturnButton() {
     return (
-        <Link to="/" className="return">На главную&#8634;</Link>
+        <Link to="/" className="return">Back to Home &#8634;</Link>
     );
 }
 
